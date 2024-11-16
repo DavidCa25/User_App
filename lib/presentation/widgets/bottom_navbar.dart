@@ -16,8 +16,9 @@ class _BottomNavbarState extends State<BottomNavbar> {
 
   final List<Widget> _pages = [
     HomeView(),
-    UserInfo(),
     UserCreate(),
+    UserInfo(),
+    
   ];
 
   void goToPage(int index) {
@@ -62,11 +63,11 @@ class _BottomNavbarState extends State<BottomNavbar> {
           ),
           GButton(
             icon: Icons.supervised_user_circle_outlined,
-            text: 'User create',
+            text: 'Create',
           ),
           GButton(
             icon: Icons.text_fields,
-            text: 'User Data',
+            text: 'Info',
             
           ),
           
