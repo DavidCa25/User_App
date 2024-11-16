@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:userapp/presentation/screens/home/home_view/home_view.dart';
-import 'package:userapp/presentation/screens/home/user_create/user_create.dart';
-import 'package:userapp/presentation/screens/home/user_info/user_info.dart';
+// import 'package:userapp/presentation/screens/home/home_view/home_view.dart';
+// import 'package:userapp/presentation/screens/home/user_create/user_create.dart';
+// import 'package:userapp/presentation/screens/home/user_info/user_info.dart';
 
 class BottomNavbar extends StatefulWidget {
   const BottomNavbar({super.key});
@@ -15,9 +15,9 @@ class _BottomNavbarState extends State<BottomNavbar> {
   int currentIndex = 0;
 
   final List<Widget> _pages = [
-    HomeView(),
-    UserCreate(),
-    UserInfo(),
+    // HomeView(),
+    // UserCreate(),
+    // UserInfo(),
     
   ];
 
