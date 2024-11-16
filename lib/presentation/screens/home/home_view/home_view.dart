@@ -51,7 +51,7 @@ class HomeView extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, '/createProfile');
+                      Navigator.pushNamed(context, '/CreateUser');
                     },
                     child: const Text(
                       'Agregar Perfil',

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:userapp/config/app_router.dart';
+import 'package:userapp/presentation/screens/home/home_view/home_view.dart';
+import 'package:userapp/presentation/screens/home/user_create/user_create.dart';
+import 'package:userapp/presentation/screens/home/user_info/user_info.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,14 +12,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      routerConfig: appRouter,
-      debugShowCheckedModeBanner: true,
-      title: 'Material App',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'User App',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomeView(),
+        '/CreateUser': (context) => const UserCreate(),
+        '/Perfil': (context) => const UserInfo(),
+      },  
     );
   }
 }

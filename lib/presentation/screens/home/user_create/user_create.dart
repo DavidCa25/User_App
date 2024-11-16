@@ -92,7 +92,7 @@ class _UserCreateState extends State<UserCreate> {
                       if (_formKey.currentState!.validate()) {
                         Navigator.pushNamed(
                           context,
-                          '/profile',
+                          '/Perfil',
                           arguments: {
                             'name': nameController.text.trim(),
                             'age': ageController.text.trim(),
